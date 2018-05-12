@@ -29,7 +29,7 @@ P2P-NET learns geometric transformations between point sets, e.g., from cross-se
 
 ### Prerequisites
 
-- Linux (tested on Ubuntu 16.4 )
+- Linux (tested on Ubuntu 16.04 )
 - Python (tested on 2.7)
 - Tensorflow (tested on 1.3.0-GPU )
 - h5py
