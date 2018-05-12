@@ -31,7 +31,7 @@ P2P-NET learns geometric transformations between point sets, e.g., from cross-se
 
 - Linux (tested on Ubuntu 16.4 )
 - Python (tested on 2.7)
-- Tensorflow (tested on TF1.3.0-GPU )
+- Tensorflow (tested on 1.3.0-GPU )
 - h5py
 
 The code is built on the top of 
@@ -40,7 +40,7 @@ The code is built on the top of
 ### Dataset
 
 Download dataset compressed in HDF5: 
- <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">here</a>.
+ <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">HERE</a>.
 
 
 Download raw obj and ply files:
