@@ -1,4 +1,4 @@
-###<a href="http://kangxue.org/papers/p2pnet.pdf"> P2P-NET: *Bidirectional Point Displacement Net for Shape Transform*</a>
+### <a href="http://kangxue.org/papers/p2pnet.pdf"> P2P-NET: *Bidirectional Point Displacement Net for Shape Transform*</a>
 <a href="http://kangxue.org">Kangxue Yin</a>, <a href="http://vcc.szu.edu.cn/~huihuang/">Hui Huang</a>, <a href="http://www.cs.tau.ac.il/~dcor/">Daniel Cohen-Or</a>, <a href="https://www.cs.sfu.ca/~haoz/">Hao Zhang</a>.
 
 P2P-NET is the first general-purpose deep neural network which learns geometric transformations between point-based shape representations from two domains, e.g., meso-skeletons and surfaces, partial and complete scans, etc.
@@ -27,7 +27,7 @@ P2P-NET learns geometric transformations between point sets, e.g., from cross-se
 <br/>
 
 
-###Prerequisites
+### Prerequisites
 
 - Linux (tested on Ubuntu 16.4 )
 - Python (tested on 2.7)
@@ -37,7 +37,7 @@ P2P-NET learns geometric transformations between point sets, e.g., from cross-se
 The code is built on the top of 
 <a href="https://github.com/charlesq34/pointnet2">PointNET++</a>.  Before run the code, please compile the   customized Tensorflow operators of PointNet++ under folder "pointnet_plusplus".
 
-###Dataset
+### Dataset
 
 Download dataset compressed in HDF5: 
  <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">here</a>.
@@ -48,7 +48,7 @@ Download raw obj and ply files:
 
 
 
-###Usage
+### Usage
 
 A example of training P2P-NET 
 
@@ -61,7 +61,7 @@ Test the model:
 	python -u run.py --mode=test  --train_hdf5='data_hdf5/airplane_train.hdf5'   --test_hdf5='data_hdf5/airplane_test.hdf5' --domain_A=skeleton --domain_B=surface  --gpu=0 --checkpoint='output_airplane_skeleton-surface/trained_models/epoch_200.ckpt'
 
 
-###Acknowledgments
+### Acknowledgments
 The code is built on the top of 
 <a href="https://github.com/charlesq34/pointnet2">PointNET++</a>. 
 Thanks for the precedent contribution.
