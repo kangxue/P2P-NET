@@ -5,12 +5,7 @@ P2P-NET is the first general-purpose deep neural network which learns geometric 
 The architecture of the P2P-NET is that of a bi-directional point displacement network, which transforms a source point set to a target point set with the same cardinality, and vice versa, by applying point-wise displacement vectors learned from data. 
 P2P-NET is trained on paired shapes from the source and target domains, but without relying on point-to-point correspondences between the source and target point sets...  [<a href="http://kangxue.org/papers/p2pnet.pdf">more in the paper</a>].
 
-<br/>
-
-![interpolate](figures/interpolate.jpg)
-
-Fig. 1. An application: P2P-NET learns geometric transformations between point sets, e.g., from cross-sectional profiles to 3D shapes, as shown. User can edit the profiles to create an interpolating sequence (top). Our network transforms all of them into point-based 3D shapes. 
-<br/>
+![interpolate](figures/p2p_archi.jpg)
 
 ### Prerequisites
 
