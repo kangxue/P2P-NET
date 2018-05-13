@@ -7,10 +7,9 @@ P2P-NET is trained on paired shapes from the source and target domains, but with
 
 <br/>
 
-![teaser](figures/interpolate.jpg)
+![interpolate](figures/interpolate.jpg)
 
-Fig. 1. An example of application: 
-P2P-NET learns geometric transformations between point sets, e.g., from cross-sectional profiles to 3D shapes, as shown. User can edit the profiles to create an interpolating sequence (top). Our network transforms all of them into point-based 3D shapes.  See more examples of results in the paper.
+Fig. 1. An application: P2P-NET learns geometric transformations between point sets, e.g., from cross-sectional profiles to 3D shapes, as shown. User can edit the profiles to create an interpolating sequence (top). Our network transforms all of them into point-based 3D shapes. 
 <br/>
 
 ### Prerequisites
@@ -29,6 +28,10 @@ The code is built on the top of
  <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">HERE</a>.
 - Download raw obj and ply files:
  <a href="https://www.dropbox.com/s/ezmmu9k66rdxoiu/data_raw.zip?dl=1">HERE</a>.
+
+If you are in China, you can also choose to download them from Weiyun:
+<a href="https://share.weiyun.com/5RrG084">HDF5</a>,
+<a href="https://share.weiyun.com/5xbVwaf">Raw</a>.
 
 
 ### Usage
