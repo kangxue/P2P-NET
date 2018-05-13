@@ -6,6 +6,7 @@ The architecture of the P2P-NET is that of a bi-directional point displacement n
 P2P-NET is trained on paired shapes from the source and target domains, but without relying on point-to-point correspondences between the source and target point sets...  [<a href="http://kangxue.org/papers/p2pnet.pdf">more in the paper</a>].
 
 <br/>
+
 ![teaser](figures/interpolate.jpg)
 
 Fig. 1. An example of application: 
