@@ -112,7 +112,6 @@ def create_model( FLAGS  ):
 
     lr_sum_op = tf.summary.scalar('learning rate', learning_rate)
     global_step_sum_op = tf.summary.scalar('batch_number', global_step)
-    bn_decay_sum_op = tf.summary.scalar('bn_decay', bn_decay)
 
     train_dataloss_A_sum_op = tf.summary.scalar('train_dataloss_A', train_dataloss_A_ph)
     train_dataloss_B_sum_op = tf.summary.scalar('train_dataloss_B', train_dataloss_B_ph)
@@ -124,8 +123,7 @@ def create_model( FLAGS  ):
 
 
     training_sum_ops = tf.summary.merge( \
-        [lr_sum_op, global_step_sum_op, bn_decay_sum_op, \
-         train_dataloss_A_sum_op, train_dataloss_B_sum_op, train_regul_sum_op])
+        [lr_sum_op, train_dataloss_A_sum_op, train_dataloss_B_sum_op, train_regul_sum_op])
 
     testing_sum_ops = tf.summary.merge( \
         [test_dataloss_A_sum_op, test_dataloss_B_sum_op, test_regul_sum_op ])
