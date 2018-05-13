@@ -5,6 +5,43 @@ P2P-NET is the first general-purpose deep neural network which learns geometric 
 The architecture of the P2P-NET is that of a bi-directional point displacement network, which transforms a source point set to a target point set with the same cardinality, and vice versa, by applying point-wise displacement vectors learned from data. 
 P2P-NET is trained on paired shapes from the source and target domains, but without relying on point-to-point correspondences between the source and target point sets...  [<a href="http://kangxue.org/papers/p2pnet.pdf">more in the paper</a>].
 
+<br/>
+![teaser](figures/interpolate.jpg)
+
+Fig. 1. An example of application: 
+P2P-NET learns geometric transformations between point sets, e.g., from cross-sectional profiles to 3D shapes, as shown. User can edit the profiles to create an interpolating sequence (top). Our network transforms all of them into point-based 3D shapes.  See more examples of results in the paper.
+<br/>
+
+### Prerequisites
+
+- Linux (tested under Ubuntu 16.04 )
+- Python (tested under 2.7)
+- TensorFlow (tested under 1.3.0-GPU )
+- numpy, h5py
+
+The code is built on the top of 
+<a href="https://github.com/charlesq34/pointnet2">PointNET++</a>.  Before run the code, please compile the   customized TensorFlow operators of PointNet++ under the folder "pointnet\_plusplus/tf\_ops".
+
+### Dataset
+
+- Download dataset compressed in HDF5:
+ <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">HERE</a>.
+- Download raw obj and ply files:
+ <a href="https://www.dropbox.com/s/ezmmu9k66rdxoiu/data_raw.zip?dl=1">HERE</a>.
+
+
+### Usage
+
+An example of training P2P-NET 
+<br/>
+(to learn transformations between point-based skeletons and point-based surfaces with the airplane dataset.)
+
+	python -u run.py --mode=train  --train_hdf5='data_hdf5/airplane_train.hdf5'   --test_hdf5='data_hdf5/airplane_test.hdf5' --domain_A=skeleton --domain_B=surface  --gpu=0
+
+Test the model:
+
+	python -u run.py --mode=test  --train_hdf5='data_hdf5/airplane_train.hdf5'   --test_hdf5='data_hdf5/airplane_test.hdf5' --domain_A=skeleton --domain_B=surface  --gpu=0 --checkpoint='output_airplane_skeleton-surface/trained_models/epoch_200.ckpt'
+
 
 ### Citation
 If you find our work useful in your research, please consider citing:
@@ -19,46 +56,6 @@ If you find our work useful in your research, please consider citing:
       year = {2018}
     }
 
-
-![teaser](figures/interpolate.jpg)
-
-Fig. 1. An example of application: 
-P2P-NET learns geometric transformations between point sets, e.g., from cross-sectional profiles to 3D shapes, as shown. User can edit the profiles to create an interpolating sequence (top). Our network transforms all of them into point-based 3D shapes.  See more examples of results in the paper.
-<br/>
-
-
-### Prerequisites
-
-- Linux (tested on Ubuntu 16.04 )
-- Python (tested on 2.7)
-- Tensorflow (tested on 1.3.0-GPU )
-- h5py
-
-The code is built on the top of 
-<a href="https://github.com/charlesq34/pointnet2">PointNET++</a>.  Before run the code, please compile the   customized Tensorflow operators of PointNet++ under folder "pointnet_plusplus".
-
-### Dataset
-
-Download dataset compressed in HDF5: 
- <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">HERE</a>.
-
-
-Download raw obj and ply files:
- here.
-
-
-
-### Usage
-
-A example of training P2P-NET 
-
-(to learn transformations between point-based skeletons and point-based surfaces with dataset of airplanes)
-
-	python -u run.py --mode=train  --train_hdf5='data_hdf5/airplane_train.hdf5'   --test_hdf5='data_hdf5/airplane_test.hdf5' --domain_A=skeleton --domain_B=surface  --gpu=0
-
-Test the model:
-
-	python -u run.py --mode=test  --train_hdf5='data_hdf5/airplane_train.hdf5'   --test_hdf5='data_hdf5/airplane_test.hdf5' --domain_A=skeleton --domain_B=surface  --gpu=0 --checkpoint='output_airplane_skeleton-surface/trained_models/epoch_200.ckpt'
 
 
 ### Acknowledgments
