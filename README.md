@@ -1,9 +1,9 @@
-### <a href="http://kangxue.org/papers/p2pnet.pdf"> P2P-NET: *Bidirectional Point Displacement Net for Shape Transform*</a>
+### <a href="https://arxiv.org/abs/1803.09263"> P2P-NET: *Bidirectional Point Displacement Net for Shape Transform*</a>
 <a href="http://kangxue.org">Kangxue Yin</a>, <a href="http://vcc.szu.edu.cn/~huihuang/">Hui Huang</a>, <a href="http://www.cs.tau.ac.il/~dcor/">Daniel Cohen-Or</a>, <a href="https://www.cs.sfu.ca/~haoz/">Hao Zhang</a>.
 
 P2P-NET is the first general-purpose deep neural network which learns geometric transformations between point-based shape representations from two domains, e.g., meso-skeletons and surfaces, partial and complete scans, etc.
 The architecture of the P2P-NET is that of a bi-directional point displacement network, which transforms a source point set to a target point set with the same cardinality, and vice versa, by applying point-wise displacement vectors learned from data. 
-P2P-NET is trained on paired shapes from the source and target domains, but without relying on point-to-point correspondences between the source and target point sets...  [<a href="http://kangxue.org/papers/p2pnet.pdf">more in the paper</a>].
+P2P-NET is trained on paired shapes from the source and target domains, but without relying on point-to-point correspondences between the source and target point sets...  [<a href="https://arxiv.org/abs/1803.09263">more in the paper</a>].
 
 ![archi_and_rep](figures/archi_and_rep.jpg)
 
