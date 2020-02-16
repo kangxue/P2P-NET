@@ -21,9 +21,9 @@ The code is built on the top of
 ### Dataset
 
 - Download dataset compressed in HDF5:
- <a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">HERE</a>.
+ <a href="https://drive.google.com/uc?id=1LF0tmJERXXSsF8z8T23Sg87ilSCXOXdB&export=download">HERE</a>.
 - Download raw obj and ply files:
- <a href="https://www.dropbox.com/s/ezmmu9k66rdxoiu/data_raw.zip?dl=1">HERE</a>.
+ <a href="https://drive.google.com/uc?id=1VUSJtcn_-lWER-_VkjWhlNMQvlpgjUEi&export=download">HERE</a>.
 
 If you are in China, you can also choose to download them from Weiyun:
 <a href="https://share.weiyun.com/5RrG084">HDF5</a>,
