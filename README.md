@@ -1,5 +1,5 @@
 
-### <a href="https://arxiv.org/abs/1803.09263"> P2P-NET: *Bidirectional Point Displacement Net for Shape Transform*</a>
+### <a href="https://kangxue.org/P2P-NET/"> P2P-NET: *Bidirectional Point Displacement Net for Shape Transform*</a>
 <a href="http://kangxue.org">Kangxue Yin</a>, <a href="http://vcc.szu.edu.cn/~huihuang/">Hui Huang</a>, <a href="http://www.cs.tau.ac.il/~dcor/">Daniel Cohen-Or</a>, <a href="https://www.cs.sfu.ca/~haoz/">Hao Zhang</a>.
 
 P2P-NET is a general-purpose deep neural network which learns geometric transformations between point-based shape representations from two domains, e.g., meso-skeletons and surfaces, partial and complete scans, etc.
